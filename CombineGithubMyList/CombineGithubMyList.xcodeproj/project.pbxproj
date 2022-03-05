@@ -10,7 +10,7 @@
 		9ABE768427CF14B8001E3461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE768327CF14B8001E3461 /* AppDelegate.swift */; };
 		9ABE768627CF14B8001E3461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE768527CF14B8001E3461 /* SceneDelegate.swift */; };
 		9ABE768827CF14B8001E3461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE768727CF14B8001E3461 /* ViewController.swift */; };
-		9ABE768B27CF14B8001E3461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE768927CF14B8001E3461 /* Main.storyboard */; };
+		9ABE768B27CF14B8001E3461 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE768927CF14B8001E3461 /* ViewController.storyboard */; };
 		9ABE768D27CF14B9001E3461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE768C27CF14B9001E3461 /* Assets.xcassets */; };
 		9ABE769027CF14B9001E3461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE768E27CF14B9001E3461 /* LaunchScreen.storyboard */; };
 		9ABE769B27CF14B9001E3461 /* CombineGithubMyListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE769A27CF14B9001E3461 /* CombineGithubMyListTests.swift */; };
@@ -23,6 +23,14 @@
 		9ABE76C827CF488B001E3461 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C627CF488B001E3461 /* Languages.swift */; };
 		9ABE76CA27CF48EC001E3461 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C927CF48EC001E3461 /* Color+Extensions.swift */; };
 		9ABE76CE27CF4910001E3461 /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76CD27CF4910001E3461 /* ReposListViewModel.swift */; };
+		9ABE76D827D120A9001E3461 /* RepoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76D727D120A9001E3461 /* RepoListRouter.swift */; };
+		9ABE76DA27D1211D001E3461 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76D927D1211D001E3461 /* UIViewController+Ex.swift */; };
+		9ABE76DC27D12183001E3461 /* String+UIValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76DB27D12183001E3461 /* String+UIValue.swift */; };
+		9ABE76E127D127E7001E3461 /* RepoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E027D127E7001E3461 /* RepoListPresenter.swift */; };
+		9ABE76E427D2907B001E3461 /* RepoListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E327D2907B001E3461 /* RepoListEntity.swift */; };
+		9ABE76E627D3752A001E3461 /* RepoListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E527D3752A001E3461 /* RepoListViewCell.swift */; };
+		9ABE76E827D375A1001E3461 /* RepoListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE76E727D375A1001E3461 /* RepoListViewCell.xib */; };
+		9ABE76EA27D377AE001E3461 /* LanguageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +55,7 @@
 		9ABE768327CF14B8001E3461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ABE768527CF14B8001E3461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9ABE768727CF14B8001E3461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9ABE768A27CF14B8001E3461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9ABE768A27CF14B8001E3461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
 		9ABE768C27CF14B9001E3461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ABE768F27CF14B9001E3461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ABE769127CF14B9001E3461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +65,6 @@
 		9ABE76A427CF14B9001E3461 /* CombineGithubMyListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineGithubMyListUITests.swift; sourceTree = "<group>"; };
 		9ABE76A627CF14B9001E3461 /* CombineGithubMyListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineGithubMyListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9ABE76B627CF243E001E3461 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		9ABE76B827CF256D001E3461 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		9ABE76B927CF256D001E3461 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9ABE76BD27CF25CA001E3461 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9ABE76BF27CF25CC001E3461 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -66,6 +73,15 @@
 		9ABE76C627CF488B001E3461 /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		9ABE76C927CF48EC001E3461 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		9ABE76CD27CF4910001E3461 /* ReposListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
+		9ABE76D327D11990001E3461 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9ABE76D727D120A9001E3461 /* RepoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRouter.swift; sourceTree = "<group>"; };
+		9ABE76D927D1211D001E3461 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		9ABE76DB27D12183001E3461 /* String+UIValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+UIValue.swift"; sourceTree = "<group>"; };
+		9ABE76E027D127E7001E3461 /* RepoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListPresenter.swift; sourceTree = "<group>"; };
+		9ABE76E327D2907B001E3461 /* RepoListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListEntity.swift; sourceTree = "<group>"; };
+		9ABE76E527D3752A001E3461 /* RepoListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewCell.swift; sourceTree = "<group>"; };
+		9ABE76E727D375A1001E3461 /* RepoListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListViewCell.xib; sourceTree = "<group>"; };
+		9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +163,7 @@
 		9ABE76B327CF14CC001E3461 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9ABE768927CF14B8001E3461 /* Main.storyboard */,
-				9ABE768727CF14B8001E3461 /* ViewController.swift */,
+				9ABE76D427D1202A001E3461 /* ReposListView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +200,8 @@
 		9ABE76C127CF2795001E3461 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9ABE76DB27D12183001E3461 /* String+UIValue.swift */,
+				9ABE76D927D1211D001E3461 /* UIViewController+Ex.swift */,
 				9ABE76C927CF48EC001E3461 /* Color+Extensions.swift */,
 			);
 			path = Extensions;
@@ -195,6 +212,53 @@
 			children = (
 				9ABE76C627CF488B001E3461 /* Languages.swift */,
 				9ABE76C527CF488B001E3461 /* Repos.swift */,
+			);
+			path = Entitiy;
+			sourceTree = "<group>";
+		};
+		9ABE76D427D1202A001E3461 /* ReposListView */ = {
+			isa = PBXGroup;
+			children = (
+				9ABE76E227D28FFE001E3461 /* Entitiy */,
+				9ABE76DD27D122A4001E3461 /* Presenters */,
+				9ABE76D627D12076001E3461 /* Routers */,
+				9ABE76D527D12060001E3461 /* Views */,
+			);
+			path = ReposListView;
+			sourceTree = "<group>";
+		};
+		9ABE76D527D12060001E3461 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9ABE768727CF14B8001E3461 /* ViewController.swift */,
+				9ABE768927CF14B8001E3461 /* ViewController.storyboard */,
+				9ABE76E527D3752A001E3461 /* RepoListViewCell.swift */,
+				9ABE76E727D375A1001E3461 /* RepoListViewCell.xib */,
+				9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9ABE76D627D12076001E3461 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9ABE76D727D120A9001E3461 /* RepoListRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9ABE76DD27D122A4001E3461 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9ABE76E027D127E7001E3461 /* RepoListPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9ABE76E227D28FFE001E3461 /* Entitiy */ = {
+			isa = PBXGroup;
+			children = (
+				9ABE76E327D2907B001E3461 /* RepoListEntity.swift */,
 			);
 			path = Entitiy;
 			sourceTree = "<group>";
@@ -306,9 +370,10 @@
 			files = (
 				9ABE76BC27CF25CA001E3461 /* Localizable.strings in Resources */,
 				9ABE769027CF14B9001E3461 /* LaunchScreen.storyboard in Resources */,
+				9ABE76E827D375A1001E3461 /* RepoListViewCell.xib in Resources */,
 				9ABE76B727CF243E001E3461 /* Color.xcassets in Resources */,
 				9ABE768D27CF14B9001E3461 /* Assets.xcassets in Resources */,
-				9ABE768B27CF14B8001E3461 /* Main.storyboard in Resources */,
+				9ABE768B27CF14B8001E3461 /* ViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,12 +399,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ABE76C727CF488B001E3461 /* Repos.swift in Sources */,
+				9ABE76DA27D1211D001E3461 /* UIViewController+Ex.swift in Sources */,
 				9ABE768827CF14B8001E3461 /* ViewController.swift in Sources */,
 				9ABE768427CF14B8001E3461 /* AppDelegate.swift in Sources */,
 				9ABE76C327CF4861001E3461 /* GithubFetcher.swift in Sources */,
+				9ABE76DC27D12183001E3461 /* String+UIValue.swift in Sources */,
 				9ABE76CE27CF4910001E3461 /* ReposListViewModel.swift in Sources */,
 				9ABE76CA27CF48EC001E3461 /* Color+Extensions.swift in Sources */,
+				9ABE76E627D3752A001E3461 /* RepoListViewCell.swift in Sources */,
+				9ABE76E127D127E7001E3461 /* RepoListPresenter.swift in Sources */,
 				9ABE768627CF14B8001E3461 /* SceneDelegate.swift in Sources */,
+				9ABE76EA27D377AE001E3461 /* LanguageLabelView.swift in Sources */,
+				9ABE76E427D2907B001E3461 /* RepoListEntity.swift in Sources */,
+				9ABE76D827D120A9001E3461 /* RepoListRouter.swift in Sources */,
 				9ABE76C827CF488B001E3461 /* Languages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,13 +449,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9ABE768927CF14B8001E3461 /* Main.storyboard */ = {
+		9ABE768927CF14B8001E3461 /* ViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9ABE768A27CF14B8001E3461 /* Base */,
-				9ABE76B827CF256D001E3461 /* ja */,
 			);
-			name = Main.storyboard;
+			name = ViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		9ABE768E27CF14B9001E3461 /* LaunchScreen.storyboard */ = {
@@ -391,6 +462,7 @@
 			children = (
 				9ABE768F27CF14B9001E3461 /* Base */,
 				9ABE76B927CF256D001E3461 /* ja */,
+				9ABE76D327D11990001E3461 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -537,7 +609,7 @@
 				INFOPLIST_FILE = CombineGithubMyList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,7 +637,7 @@
 				INFOPLIST_FILE = CombineGithubMyList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
