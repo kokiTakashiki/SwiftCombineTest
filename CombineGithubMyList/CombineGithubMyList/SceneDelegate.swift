@@ -24,7 +24,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let rootViewController = RepoListRouter.assembleModule()
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: rootViewController)
+        
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        
+        navigationController.navigationBar.prefersLargeTitles = true
+        
+        let scrollEdge = UINavigationBarAppearance()
+        scrollEdge.configureWithDefaultBackground()
+        navigationController.navigationBar.scrollEdgeAppearance = scrollEdge
+        
+        window?.rootViewController = navigationController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-La-Rho">
-                                <rect key="frame" x="20" y="111" width="374" height="751"/>
+                                <rect key="frame" x="20" y="49" width="374" height="813"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -25,27 +25,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-so-aTM">
-                                <rect key="frame" x="20" y="64" width="76" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="NLI-La-Rho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Jk-ce-5D5"/>
-                            <constraint firstItem="mpR-so-aTM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9XF-n3-BiD"/>
                             <constraint firstItem="NLI-La-Rho" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="F2J-af-aEE"/>
-                            <constraint firstItem="NLI-La-Rho" firstAttribute="top" secondItem="mpR-so-aTM" secondAttribute="bottom" constant="8" symbolic="YES" id="PLq-dT-9JM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NLI-La-Rho" secondAttribute="trailing" constant="20" id="ZLg-pp-s4p"/>
-                            <constraint firstItem="mpR-so-aTM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zvA-KY-VwV"/>
+                            <constraint firstItem="NLI-La-Rho" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="lWI-ud-jnu"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="NLI-La-Rho" id="MPF-5d-din"/>
-                        <outlet property="titleLabel" destination="mpR-so-aTM" id="xzq-MU-eFj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

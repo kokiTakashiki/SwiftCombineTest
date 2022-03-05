@@ -38,6 +38,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         Task {
             await presenter.viewDidLoad()
+            self.navigationItem.title = NSLocalizedString("title", comment: "")
         }
     }
     
