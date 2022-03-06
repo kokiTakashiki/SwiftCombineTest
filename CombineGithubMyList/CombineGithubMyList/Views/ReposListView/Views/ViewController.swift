@@ -24,13 +24,17 @@ final class ViewController: UIViewController {
     // MARK: Computed Instance Properties
 
     // MARK: IBOutlets
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.register(.init(nibName: .RepoListViewCell, bundle: nil),
                                forCellReuseIdentifier: .RepoListViewCell)
+            /*
+             Warning once only: Detected a case where constraints ambiguously suggest a height of zero for a table view cell's content view. We're considering the collapse unintentional and using standard height instead.
+             の回避：https://qiita.com/kumas/items/e3decb402b4e399729e7
+             */
+            tableView.rowHeight = 80
         }
     }
     

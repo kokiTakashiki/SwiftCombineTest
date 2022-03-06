@@ -31,6 +31,8 @@
 		9ABE76E627D3752A001E3461 /* RepoListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E527D3752A001E3461 /* RepoListViewCell.swift */; };
 		9ABE76E827D375A1001E3461 /* RepoListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE76E727D375A1001E3461 /* RepoListViewCell.xib */; };
 		9ABE76EA27D377AE001E3461 /* LanguageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */; };
+		9ABE76EC27D4498E001E3461 /* mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76EB27D4498E001E3461 /* mock.swift */; };
+		9ABE76EF27D4540A001E3461 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76EE27D4540A001E3461 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		9ABE76E527D3752A001E3461 /* RepoListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewCell.swift; sourceTree = "<group>"; };
 		9ABE76E727D375A1001E3461 /* RepoListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListViewCell.xib; sourceTree = "<group>"; };
 		9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLabelView.swift; sourceTree = "<group>"; };
+		9ABE76EB27D4498E001E3461 /* mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mock.swift; sourceTree = "<group>"; };
+		9ABE76EE27D4540A001E3461 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 				9ABE76B527CF1550001E3461 /* ViewModel */,
 				9ABE76B427CF14D3001E3461 /* API */,
 				9ABE76C127CF2795001E3461 /* Extensions */,
+				9ABE76ED27D4540A001E3461 /* UIParts */,
 				9ABE76C027CF2612001E3461 /* Resources */,
 			);
 			path = CombineGithubMyList;
@@ -173,6 +178,7 @@
 			children = (
 				9ABE76C427CF4875001E3461 /* Entitiy */,
 				9ABE76C227CF4861001E3461 /* GithubFetcher.swift */,
+				9ABE76EB27D4498E001E3461 /* mock.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -261,6 +267,14 @@
 				9ABE76E327D2907B001E3461 /* RepoListEntity.swift */,
 			);
 			path = Entitiy;
+			sourceTree = "<group>";
+		};
+		9ABE76ED27D4540A001E3461 /* UIParts */ = {
+			isa = PBXGroup;
+			children = (
+				9ABE76EE27D4540A001E3461 /* BaseView.swift */,
+			);
+			path = UIParts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +415,7 @@
 				9ABE76C727CF488B001E3461 /* Repos.swift in Sources */,
 				9ABE76DA27D1211D001E3461 /* UIViewController+Ex.swift in Sources */,
 				9ABE768827CF14B8001E3461 /* ViewController.swift in Sources */,
+				9ABE76EF27D4540A001E3461 /* BaseView.swift in Sources */,
 				9ABE768427CF14B8001E3461 /* AppDelegate.swift in Sources */,
 				9ABE76C327CF4861001E3461 /* GithubFetcher.swift in Sources */,
 				9ABE76DC27D12183001E3461 /* String+UIValue.swift in Sources */,
@@ -413,6 +428,7 @@
 				9ABE76E427D2907B001E3461 /* RepoListEntity.swift in Sources */,
 				9ABE76D827D120A9001E3461 /* RepoListRouter.swift in Sources */,
 				9ABE76C827CF488B001E3461 /* Languages.swift in Sources */,
+				9ABE76EC27D4498E001E3461 /* mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

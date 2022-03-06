@@ -14,11 +14,13 @@ final class ReposListViewModel {
     @Published var languagesData: [Languages] = []
 
     init() {
-        self.fetcher.repos { (repos) in
-            //sleep(1)
-            self.reposData = repos
-            self.isShowIndicator = false
-        }
+//        self.fetcher.repos { (repos) in
+//            //sleep(1)
+//            self.reposData = repos
+//            self.isShowIndicator = false
+//        }
+        reposData = mock().repos
+        isShowIndicator = false
     }
     
     func selectedRepoLanguagesData(repoName: String) {

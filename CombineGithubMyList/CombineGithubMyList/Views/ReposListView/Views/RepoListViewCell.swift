@@ -10,11 +10,11 @@ import UIKit
 @MainActor
 final class RepoListViewCell: UITableViewCell {
     // MARK: Stored Instance Properties
-    @IBInspectable private var masksToBounds: Bool = false {
-        willSet {
-            layer.masksToBounds = newValue
-        }
-    }
+//    @IBInspectable private var masksToBounds: Bool = false {
+//        willSet {
+//            layer.masksToBounds = newValue
+//        }
+//    }
     
     // MARK: IBOutlets
     @IBOutlet weak var titleLabel: UILabel! {
