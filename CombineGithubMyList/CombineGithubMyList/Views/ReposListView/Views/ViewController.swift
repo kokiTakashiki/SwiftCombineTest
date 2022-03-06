@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LocalConsole
 
 protocol RepoListUserInterface: AnyObject {
     func updateRepoList(_ demoList: [RepoListEntity])
@@ -20,6 +21,8 @@ final class ViewController: UIViewController {
     private var presenter: RepoListEventHandler!
     
     private var tableData: [RepoListEntity] = []
+    
+    let consoleManager = LCManager.shared
 
     // MARK: Computed Instance Properties
 
@@ -43,6 +46,14 @@ final class ViewController: UIViewController {
         Task {
             await presenter.viewDidLoad()
             self.navigationItem.title = NSLocalizedString("title", comment: "")
+            
+            // debug mode
+            let barButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left.forwardslash.chevron.right"),
+                                            style: .done,
+                                           target: self,
+                                           action: #selector(debugPressed(_:)))
+            barButton.tintColor = .label
+            self.navigationItem.rightBarButtonItem = barButton
         }
     }
     
@@ -52,6 +63,11 @@ final class ViewController: UIViewController {
     ) {
         self.presenter = presenter
         //self.logger = logger
+    }
+    
+    @objc func debugPressed(_ sender: UIBarButtonItem) {
+        consoleManager.isVisible.toggle()
+        consoleManager.clear()
     }
 }
 
