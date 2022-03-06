@@ -17,13 +17,7 @@ final class RepoListViewCell: UITableViewCell {
 //    }
     
     // MARK: IBOutlets
-    @IBOutlet weak var languageLabel: LanguageLabelView! {
-        didSet {
-            languageLabel.colorType = "Swift"
-            languageLabel.labelText = "Swift"
-            languageLabel.afterInit()
-        }
-    }
+    @IBOutlet weak var languageLabel: LanguageLabelView!
     @IBOutlet weak var titleLabel: UILabel! {
         willSet {
             newValue.text = nil
@@ -31,7 +25,10 @@ final class RepoListViewCell: UITableViewCell {
     }
     // MARK: View Life-Cycle Methods
     // MARK: Other Internal Methods
-    func setup(name: String) {
+    func setup(name: String, language: String) {
         titleLabel.text = name
+        languageLabel.colorType = language
+        languageLabel.labelText = language
+        languageLabel.afterInit()
     }
 }

@@ -56,7 +56,7 @@ extension RepoListPresenter: RepoListEventHandler {
                 .sink { repos in
                     if !repos.isEmpty {
                         repos.forEach({ repo in
-                            repoList.append(RepoListEntity(title: repo.name, description: repo.description ?? ""))
+                            repoList.append(RepoListEntity(title: repo.name, language: repo.language ?? ""))
                         })
                         self.view.updateRepoList(repoList)
                     }

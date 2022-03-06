@@ -68,7 +68,7 @@ extension ViewController: UITableViewDataSource {
         Task {
             do {
                 let data = tableData[indexPath.row]
-                cell.setup(name: data.title)
+                cell.setup(name: data.title, language: data.language)
             } catch {
                 // TODO: エラーハンドリング
             }

@@ -9,7 +9,7 @@ import Foundation
 
 struct RepoListEntity: Equatable {
     var title: String
-    var description: String
+    var language: String
 }
 
 extension RepoListEntity: Sendable {}
