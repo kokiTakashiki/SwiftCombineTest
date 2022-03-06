@@ -34,7 +34,7 @@ final class ViewController: UIViewController {
              Warning once only: Detected a case where constraints ambiguously suggest a height of zero for a table view cell's content view. We're considering the collapse unintentional and using standard height instead.
              の回避：https://qiita.com/kumas/items/e3decb402b4e399729e7
              */
-            tableView.rowHeight = 80
+            tableView.rowHeight = 65
         }
     }
     

@@ -17,6 +17,13 @@ final class RepoListViewCell: UITableViewCell {
 //    }
     
     // MARK: IBOutlets
+    @IBOutlet weak var languageLabel: LanguageLabelView! {
+        didSet {
+            languageLabel.colorType = "Swift"
+            languageLabel.labelText = "Swift"
+            languageLabel.afterInit()
+        }
+    }
     @IBOutlet weak var titleLabel: UILabel! {
         willSet {
             newValue.text = nil

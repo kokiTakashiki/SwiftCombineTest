@@ -14,4 +14,8 @@ extension String {
     static var RepoListViewCell: String {
         return "RepoListViewCell"
     }
+    // MARK: LanguageLabelView Name or ID
+    static var LanguageLabelView: String {
+        return "LanguageLabelView"
+    }
 }

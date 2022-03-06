@@ -21,7 +21,7 @@
 		9ABE76C327CF4861001E3461 /* GithubFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C227CF4861001E3461 /* GithubFetcher.swift */; };
 		9ABE76C727CF488B001E3461 /* Repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C527CF488B001E3461 /* Repos.swift */; };
 		9ABE76C827CF488B001E3461 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C627CF488B001E3461 /* Languages.swift */; };
-		9ABE76CA27CF48EC001E3461 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C927CF48EC001E3461 /* Color+Extensions.swift */; };
+		9ABE76CA27CF48EC001E3461 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76C927CF48EC001E3461 /* UIColor+Extensions.swift */; };
 		9ABE76CE27CF4910001E3461 /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76CD27CF4910001E3461 /* ReposListViewModel.swift */; };
 		9ABE76D827D120A9001E3461 /* RepoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76D727D120A9001E3461 /* RepoListRouter.swift */; };
 		9ABE76DA27D1211D001E3461 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76D927D1211D001E3461 /* UIViewController+Ex.swift */; };
@@ -33,6 +33,7 @@
 		9ABE76EA27D377AE001E3461 /* LanguageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */; };
 		9ABE76EC27D4498E001E3461 /* mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76EB27D4498E001E3461 /* mock.swift */; };
 		9ABE76EF27D4540A001E3461 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE76EE27D4540A001E3461 /* BaseView.swift */; };
+		9ABE76F127D45813001E3461 /* LanguageLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE76F027D45813001E3461 /* LanguageLabelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +74,7 @@
 		9ABE76C227CF4861001E3461 /* GithubFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubFetcher.swift; sourceTree = "<group>"; };
 		9ABE76C527CF488B001E3461 /* Repos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repos.swift; sourceTree = "<group>"; };
 		9ABE76C627CF488B001E3461 /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
-		9ABE76C927CF48EC001E3461 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		9ABE76C927CF48EC001E3461 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9ABE76CD27CF4910001E3461 /* ReposListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
 		9ABE76D327D11990001E3461 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9ABE76D727D120A9001E3461 /* RepoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRouter.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLabelView.swift; sourceTree = "<group>"; };
 		9ABE76EB27D4498E001E3461 /* mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mock.swift; sourceTree = "<group>"; };
 		9ABE76EE27D4540A001E3461 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9ABE76F027D45813001E3461 /* LanguageLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageLabelView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +210,7 @@
 			children = (
 				9ABE76DB27D12183001E3461 /* String+UIValue.swift */,
 				9ABE76D927D1211D001E3461 /* UIViewController+Ex.swift */,
-				9ABE76C927CF48EC001E3461 /* Color+Extensions.swift */,
+				9ABE76C927CF48EC001E3461 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +243,7 @@
 				9ABE76E527D3752A001E3461 /* RepoListViewCell.swift */,
 				9ABE76E727D375A1001E3461 /* RepoListViewCell.xib */,
 				9ABE76E927D377AE001E3461 /* LanguageLabelView.swift */,
+				9ABE76F027D45813001E3461 /* LanguageLabelView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				9ABE769027CF14B9001E3461 /* LaunchScreen.storyboard in Resources */,
 				9ABE76E827D375A1001E3461 /* RepoListViewCell.xib in Resources */,
 				9ABE76B727CF243E001E3461 /* Color.xcassets in Resources */,
+				9ABE76F127D45813001E3461 /* LanguageLabelView.xib in Resources */,
 				9ABE768D27CF14B9001E3461 /* Assets.xcassets in Resources */,
 				9ABE768B27CF14B8001E3461 /* ViewController.storyboard in Resources */,
 			);
@@ -420,7 +424,7 @@
 				9ABE76C327CF4861001E3461 /* GithubFetcher.swift in Sources */,
 				9ABE76DC27D12183001E3461 /* String+UIValue.swift in Sources */,
 				9ABE76CE27CF4910001E3461 /* ReposListViewModel.swift in Sources */,
-				9ABE76CA27CF48EC001E3461 /* Color+Extensions.swift in Sources */,
+				9ABE76CA27CF48EC001E3461 /* UIColor+Extensions.swift in Sources */,
 				9ABE76E627D3752A001E3461 /* RepoListViewCell.swift in Sources */,
 				9ABE76E127D127E7001E3461 /* RepoListPresenter.swift in Sources */,
 				9ABE768627CF14B8001E3461 /* SceneDelegate.swift in Sources */,
